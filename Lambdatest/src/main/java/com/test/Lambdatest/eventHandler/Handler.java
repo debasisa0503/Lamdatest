@@ -21,7 +21,6 @@ public class Handler implements RequestHandler<S3Event, String> {
 
 	@Override
 	public String handleRequest(S3Event event, Context context) {
-
 		try {
 			StringBuffer sbf = new StringBuffer();
 			for (S3EventNotificationRecord record : event.getRecords()) {
